@@ -5,10 +5,10 @@ defmodule UltraBorg.Sensors do
   alias UltraBorg.I2C
 
   @sensors %{
-    usm1: 41,
-    usm2: 42,
-    usm3: 43,
-    usm4: 44
+    usm1: 1,
+    usm2: 2,
+    usm3: 3,
+    usm4: 4
   }
 
   @usm_us_to_mm 0.171500

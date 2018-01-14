@@ -39,9 +39,8 @@ defmodule UltraBorg do
   end
 
   def handle_call(:read_sensors, _from, state) do
-    Sensors.read_sensors()
-    |> IO.inspect()
-    {:reply, state, state}
+    readings = Sensors.read_sensors()
+    {:reply, readings, state}
   end
 
   def handle_info(msg, _state) do
